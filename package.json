@@ -1,0 +1,11 @@
+{
+  "name": "grpc-node-prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CodeEventHorizon/grpc-node-prisma.git",
+  "author": "Nikoloz Muladze <nikoloz.9374@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
