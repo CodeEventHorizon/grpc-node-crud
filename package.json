@@ -6,17 +6,26 @@
   "author": "Nikoloz Muladze <nikoloz.9374@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start:server": "ts-node-dev --respawn --transpile-only server/app.ts",
+    "start:client": "ts-node-dev --respawn --transpile-only client/app.ts",
     "db:migrate": "npx prisma migrate dev --name post-entity --create-only --schema ./server/prisma/schema.prisma",
     "db:generate": " npx prisma generate --schema ./server/prisma/schema.prisma",
     "db:push": "npx prisma db push --schema ./server/prisma/schema.prisma"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "morgan": "^1.10.0",
     "prisma": "^5.7.0",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.3"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.9.12",
     "@grpc/proto-loader": "^0.7.10",
-    "@prisma/client": "^5.7.0"
+    "@prisma/client": "^5.7.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "zod": "^3.22.4"
   }
 }
