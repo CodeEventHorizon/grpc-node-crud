@@ -5,6 +5,11 @@
   "repository": "https://github.com/CodeEventHorizon/grpc-node-prisma.git",
   "author": "Nikoloz Muladze <nikoloz.9374@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "db:migrate": "npx prisma migrate dev --name post-entity --create-only --schema ./server/prisma/schema.prisma",
+    "db:generate": " npx prisma generate --schema ./server/prisma/schema.prisma",
+    "db:push": "npx prisma db push --schema ./server/prisma/schema.prisma"
+  },
   "devDependencies": {
     "prisma": "^5.7.0",
     "typescript": "^5.3.3"
