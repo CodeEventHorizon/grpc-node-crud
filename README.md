@@ -1,1 +1,1 @@
-# grpc-node-prisma
+# grpc-node-crud
