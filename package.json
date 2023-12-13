@@ -1,8 +1,8 @@
 {
-  "name": "grpc-node-prisma",
+  "name": "grpc-node-crud",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/CodeEventHorizon/grpc-node-prisma.git",
+  "repository": "https://github.com/CodeEventHorizon/grpc-node-crud.git",
   "author": "Nikoloz Muladze <nikoloz.9374@gmail.com>",
   "license": "MIT",
   "scripts": {
