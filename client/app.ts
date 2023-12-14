@@ -1,5 +1,5 @@
 import * as grpc from "@grpc/grpc-js";
-import customConfig from "../server/config/default";
+import customConfig from "config";
 import { proto } from "./client";
 import express, { Request, Response } from "express";
 import morgan from "morgan";
@@ -15,7 +15,7 @@ import {
 import { Post } from "@prisma/client";
 
 const client = new proto.PostService(
-  `0.0.0.0:${customConfig.port}`,
+  `0.0.0.0:${customConfig.get<string>("port")}`,
   grpc.credentials.createInsecure()
 );
 const deadline = new Date();
